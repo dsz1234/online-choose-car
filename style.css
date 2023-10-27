@@ -2,3 +2,77 @@
   padding: 0;
   margin: 0;
 }
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.wrap{
+  display: flex;
+  height: 100%;
+  height: 100%;
+}
+.wrap .app{
+  flex: 3;
+}
+.wrap .tool{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 60px;
+  width: 100%;
+}
+.tool .group_list{
+  overflow-y: auto;
+}
+.tool .group_list .group{
+  padding: 10px;
+  text-align: center;
+}
+.tool .group_list .group .title{
+  font-size: 15px;
+  margin: 15px 0;
+}
+.group .item_wrap{
+  display: flex;
+  text-align: center;
+}
+.group .item_wrap>div{
+  flex: 1;
+}
+.group .item_wrap .info_btn{
+  padding:10px 0;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.item_wrap .col{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.item_wrap p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+.tool .price{
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.tool .price .next_btn{
+  background-color: #b53434;
+  cursor: pointer;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 12px;
+}
